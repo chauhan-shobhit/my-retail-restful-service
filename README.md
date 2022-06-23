@@ -81,3 +81,40 @@ GET http://localhost:1000/products/13860428
 
 <img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175401983-8ddb10ec-9ec5-402a-bf76-4529d11412bd.png">
 
+==============================
+
+PUT http://localhost:1000/products/13860428
+
+{
+    "id": 13860428,
+    "productName": "The Big Lebowski (Blu-ray)",
+    "current_price": {
+        "value": 13.49,
+        "currency_code": "USD"
+    }
+}
+
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175405832-e777cb9f-9d75-46e1-b7a2-1bc9d15c018c.png">
+
+
+
+Querying the record after the change:
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175404707-272effe4-8395-4fe5-ba69-b048168f5af0.png">
+
+
+Invalid ProductId (Product doesn't exist):
+
+"errorCode": "MR-PS-404-01",
+"errorMessage": "Product not found"
+    
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175405312-d64ff2d7-8f49-4e11-84c7-96e9b339c639.png">
+
+Invalid product Id - Alphanumeric Id
+
+"errorCode": "MR-PS-SE-001",
+"errorMessage": "Internal Server Error"
+
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175405128-4170d403-768f-4460-967f-c4ae50c583ea.png">
+
+
+
