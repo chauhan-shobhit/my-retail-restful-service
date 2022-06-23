@@ -14,7 +14,7 @@ price details by ID. The URL structure is up to you to define, but try to
 follow some sort of logical convention.
 
 
-Build an application that performs the following actions: 
+# Build an application that performs the following actions: 
 
 Responds to an HTTP GET request at /products/{id} and delivers 
 product data as JSON (where {id} will be a number. 
@@ -42,3 +42,42 @@ single response.
 BONUS: Accepts an HTTP PUT request at the same path 
 (/products/{id}), containing a JSON request body similar to the 
 GET response, and updates the product’s price in the data store. 
+
+# Technology Stack
+
+Coding Language - Java
+Framework       - Springboot
+Database        - MongoDB Atlas (requires userName and password to be replaced with valid MongoDB Atlas credentials)
+Documentation   - Swagger 
+
+
+# Build Instructions
+
+Clone the repo - https://github.com/chauhan-shobhit/my-retail-restful-service.git
+Add credentials for MongoDB in applicaition.properties file (replace userName and password)
+Build - 
+cd product
+./mvnw clean install
+./mvnw spring-boot:run
+
+Tomcat port of application : 1000
+
+# Endpoints : 
+
+Swagger Documentation - http://localhost:1000/swagger-ui/index.html
+Health check endpoint - http://localhost:1000/actuator/health
+Application - http://localhost:1000/
+
+
+
+# Swagger Documentation
+
+<img width="1385" alt="image" src="https://user-images.githubusercontent.com/45724184/175400881-7b3a18de-5955-4497-95bd-7bb26a39382d.png">
+
+
+# Postman 
+
+GET http://localhost:1000/products/13860428
+
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/45724184/175401983-8ddb10ec-9ec5-402a-bf76-4529d11412bd.png">
+
